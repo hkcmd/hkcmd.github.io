@@ -1,0 +1,149 @@
+/*
+ *   hkcmd.css
+ *   Root namespace styles
+*/
+
+/** Begin reset */
+	* {
+		margin				: 0;
+		padding				: 0;
+		-webkit-box-sizing	: border-box;
+		-moz-box-sizing		: border-box;
+		box-sizing			: border-box;
+	}
+	h1,h2,h3,h4,h5,h6,p {
+		margin-bottom		: 10px;
+	}
+	ol,ul,dl {
+		list-style-position : inside;
+	}
+	html body{ 
+		width					: 100%; 
+		height					: 100%;
+	}
+/** End reset */
+
+/** Begin hkcmd namespace selectors */
+
+	#hkcmd {
+		width				: 960px;
+		height				: 100%;
+		position			: fixed;
+		overflow			: hidden;
+	}
+/** End hkcmd namespace selectors */
+
+	.hkcmd-shell-side {
+		position			: absolute;
+		box-shadow			: 2px 2px 2px #888888;
+		background-color	: #fafafa;
+		height				: 100%;
+		width				: auto;
+	} 
+	.hkcmd-shell-side-morenqu {
+		border				: #fafafa solid 1px;
+		width				: auto;
+		height				: 195.2px;					
+	}	
+	.hkcmd-shell-side-morenqu-box {	
+		border				: #fafafa solid 1px;
+		background-color	: #fafafa;
+		width				: auto;
+		height				: 44px;
+		margin-top			: 3px;	
+		font-size			: 0px;	
+		padding-left		: 2px;
+		padding-right		: 2px;
+	}  
+	img {
+		width				: 32px;
+		height				: 32px;
+		margin-top			: 5px;
+		vertical-align		: middle;
+	}
+	span {
+		margin-left			: 10px;
+		margin-right		: 20px;
+		margin-top			: 5px;
+		font-size			: 10px;
+		display				: none;
+		vertical-align		: middle;
+	}
+	.hkcmd-shell-side-zidingyiqu {
+		border				: #fafafa solid 1px;
+		height				: 353.8px;
+	}
+	.hkcmd-shell-side-menu {
+		border				: #fafafa solid 1px;
+		height				: 61px;
+		padding-top			: 3px;
+	}
+	
+	.hkcmd-shell-content {	
+		width				: 894px;	
+		height				: 100%;	
+		margin-left			: 66px;
+	}
+	
+	hr { 
+		border				: none; 
+		background-color	: #D3D3D3;
+		margin-left			: 4px;
+		width				: 85%;
+		height				: 1px; 
+	}
+	.shufa {
+		position			: absolute;
+		top					: 10px;
+		right				: 5px;
+		font-family			: "王羲之书法字体";
+		background-color		: #EBEBEB;	
+		writing-mode		: tb-rl;
+		text-align			: justify;
+		font-size			: 36px;
+		z-index				: -1;
+	}
+	p {
+		font-size			: 28px;
+		margin-top			: 60px;
+	}
+	
+	/*  给矩形一个1px实心颜色rgb为#E4E4E2的边框  */
+	.mulu {
+		width: 225px;
+		height: 100%;
+		background-color:#fff;
+		border-left: 1px solid #d3d3d3;
+		border-right: 1px solid #d3d3d3;
+		top: 0px;
+	    right: -225px;
+		position:absolute;
+		display: none;
+		vertical-align: middle;
+	}
+	/*  
+	上下透明，右边框为10px */
+	.mulu:before {
+		content: '';
+		position: absolute;
+		top: 20px;
+		left: -8px;
+		width: 0;
+		height: 0;
+		border-right: 8px solid #d3d3d3;
+		border-bottom: 8px solid transparent;
+		border-top: 8px solid transparent; 
+	}
+	
+	/*  上下透明，右边框为9px且在:before伪元素三角形的基础上，向右，下移动了1px  */
+	.mulu:after {
+		content: '';
+		position: absolute;
+		top: 21px;
+		left: -7px;
+		width: 0;
+		height: 0;
+		border-bottom: 7px solid transparent;
+		border-right: 7px solid #fff;
+		border-top: 7px solid transparent; 
+	}
